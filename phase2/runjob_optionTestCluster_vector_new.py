@@ -63,6 +63,9 @@ for p in range(k):
     com = '../../search_doc/search_doc '+ str(query_len)
     print 'run search_doc:'
     run_command(com)
+    com = '../../search_doc/optionTestCluster_vector '+ str(query_len)
+    print 'run optionTestCluster:'
+    run_command(com)
     fr = open('result.txt', 'r')
     lines_r = fr.readlines()
     fr.close()
