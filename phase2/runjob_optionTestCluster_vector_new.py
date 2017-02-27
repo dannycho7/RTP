@@ -60,7 +60,7 @@ for p in range(k):
     print 'run lucene search:'
     run_command(com)
     # search_doc to generate "vidlist.txt"
-    com = '../../search_doc/search_doc '+ str(query_len)
+    com = '../../search_doc/search_doc '+ query
     print 'run search_doc:'
     run_command(com)
     com = '../../search_doc/optionTestCluster_vector '+ str(query_len)

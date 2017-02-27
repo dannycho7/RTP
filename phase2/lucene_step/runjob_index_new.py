@@ -24,5 +24,6 @@ for line in fin.readlines():
     os.chdir(did+'/')
     #run_command_n('cp ../../lucene_step/binary_index_gen ./')
     run_command_n('../../lucene_step/binary_index_gen --index index < all_fragments.txt')
+    run_command_n('../../gen_bitmap')
     os.chdir('..')
 
