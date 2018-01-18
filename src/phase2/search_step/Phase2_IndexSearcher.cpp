@@ -83,7 +83,7 @@ bool Phase2_IndexSearcher::lookup_term(termid_t termid, std::vector<std::pair<do
     return false;
   }
 
-  if (!postings_ser->seek(it->second)) { fprintf(stderr, "fail seek to %llu\n",it->second); return false; }
+  if (!postings_ser->seek(it->second)) { fprintf(stderr, "fail seek to %lu\n",it->second); return false; }
 
   uint32_t ndocs;
   if (!postings_ser->read_vbyte32(ndocs)) { fprintf(stderr,"fail 3\n"); return false; }
